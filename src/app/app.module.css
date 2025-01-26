@@ -1,1 +1,41 @@
-/* Your styles goes here. */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.imageContainer {
+    max-width: 90vw;
+    max-height: 80vh;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.imageContainer:hover {
+    transform: scale(1.01);
+}
+
+.framedImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
